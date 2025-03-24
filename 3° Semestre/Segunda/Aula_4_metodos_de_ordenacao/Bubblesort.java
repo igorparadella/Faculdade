@@ -3,9 +3,10 @@ public class Bubblesort {
         int[] vetor = new int[10];
 
         for(int i = 0; i < vetor.length; i++) {
-            vetor[i] = (int) (Math.random() * 100);
+            vetor[i] = (int) (Math.random() * 10);
 
-            System.out.println(vetor[1]);
+            System.out.println(vetor[i]);
         }
+        
     }
 }
