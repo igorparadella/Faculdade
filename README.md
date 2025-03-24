@@ -81,5 +81,3 @@ Aqui está uma lista com os comandos Git mais usados:
 - `git remote remove <nome>` → Remove um repositório remoto.  
 
 Se precisar de mais detalhes sobre algum comando, só perguntar! 🚀
-
-# Faculdade
