@@ -43,10 +43,17 @@ Aqui está uma lista com os comandos Git mais usados:
 
 Se precisar de mais detalhes sobre algum comando, só perguntar! 🚀
 
+
 echo "# Cursos" >> README.md
+
 git init
+
 git add README.md
+
 git commit -m "first commit"
+
 git branch -M main
+
 git remote add origin https://github.com/igorparadella/Cursos.git
+
 git push -u origin main
