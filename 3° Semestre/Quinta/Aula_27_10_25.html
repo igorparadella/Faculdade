@@ -20,74 +20,97 @@
 
         // Exemplo de uso do indexOf() para encontrar o índice de 'Erika'
         let index = p.indexOf('Erika'); 
-        document.write("Índice de 'Erika': " + index + "<br>");
+        document.write("Índice de 'Erika': " + index + "<br><br>");
 
         // Adicionando elementos de diferentes maneiras
         // 1. Usando push() - Adicionando no final
         p.push('Lucas', 'Mariana', 'Carlos');
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>push()</strong>: Adicionando 'Lucas', 'Mariana' e 'Carlos' no final do array:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>push()</strong>: Adicionando 'Lucas', 'Mariana' e 'Carlos' no final do array:</p>");
         p.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 2. Usando unshift() - Adicionando no início
         p.unshift('João', 'Paula');
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>unshift()</strong>: Adicionando 'João' e 'Paula' no início do array:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>unshift()</strong>: Adicionando 'João' e 'Paula' no início do array:</p>");
         p.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 3. Usando concat() - Juntando dois arrays
         let novosNomes = ['Renata', 'Felipe'];
         p = p.concat(novosNomes);
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>concat()</strong>: Juntando o array atual com ['Renata', 'Felipe']:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>concat()</strong>: Juntando o array atual com ['Renata', 'Felipe']:</p>");
         p.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 4. Usando spread (...) - Adicionando no final
         p = [...p, 'Bárbara', 'Tiago'];
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>spread (...)</strong>: Adicionando 'Bárbara' e 'Tiago' ao final do array:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>spread (...)</strong>: Adicionando 'Bárbara' e 'Tiago' ao final do array:</p>");
         p.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 5. Usando splice() - Adicionando em uma posição específica (posição 3, sem remover nada)
         p.splice(3, 0, 'Ricardo', 'Simone');
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>splice()</strong>: Inserindo 'Ricardo' e 'Simone' na posição 3 sem remover nenhum item:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>splice()</strong>: Inserindo 'Ricardo' e 'Simone' na posição 3 sem remover nenhum item:</p>");
         p.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 6. Usando Symbol.iterator - Espalhando e adicionando elementos
         let maisNomes = ['Mário', 'Larissa'];
         for (let nome of maisNomes) {
             p.push(nome); // Adicionando no final
         }
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>Symbol.iterator</strong>: Adicionando 'Mário' e 'Larissa' ao final do array:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>Symbol.iterator</strong>: Adicionando 'Mário' e 'Larissa' ao final do array:</p>");
         p.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 7. Usando from() - Criando um novo array a partir de outro (Array.from)
         let nomesAdicionais = Array.from(['Sofia', 'Carlos']);
         p = p.concat(nomesAdicionais);
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>Array.from()</strong>: Criando um novo array ['Sofia', 'Carlos'] e concatenando ao array atual:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>Array.from()</strong>: Criando um novo array ['Sofia', 'Carlos'] e concatenando ao array atual:</p>");
         p.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 8. Usando map() - Transformando e adicionando ao final (com concat)
         p = p.map(name => name).concat('Lúcio', 'Diana');
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>map()</strong>: Mapeando o array e concatenando 'Lúcio' e 'Diana' ao final:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>map()</strong>: Mapeando o array e concatenando 'Lúcio' e 'Diana' ao final:</p>");
         p.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 9. Usando slice() - Criando cópia e adicionando
         let maisNomes2 = ['Cláudio', 'Gisele'];
         let novaLista = p.slice().concat(maisNomes2);
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>slice()</strong>: Criando uma cópia do array e concatenando ['Cláudio', 'Gisele']:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>slice()</strong>: Criando uma cópia do array e concatenando ['Cláudio', 'Gisele']:</p>");
         novaLista.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
 
         // 10. Usando reduce() - Acumulando elementos em um novo array
         let listaFinal = maisNomes2.reduce((acc, nome) => acc.concat(nome), p);
-        document.write("<p>----------------------------------------------------------------------<p>Usando <strong>reduce()</strong>: Usando o acumulador para juntar todos os elementos em um novo array:</p>");
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>reduce()</strong>: Usando o acumulador para juntar todos os elementos em um novo array:</p>");
         listaFinal.forEach(name => document.write(name + ", "));
-        document.write("<br>");
+        document.write("<br><br>");
+
+        // 11. Uso de objeto
+        let carro = {
+            portas: 2,
+            portamalas: '200l',
+            volante: 1
+        };
+
+        document.write("<p>----------------------------------------------------------------------</p>");
+        document.write("<p>Usando <strong>Objeto</strong>: Exibindo o objeto carro:</p>");
+        document.write(JSON.stringify(carro));
+        document.write("<br><br>");
+
     </script>
 </head>
 <body>

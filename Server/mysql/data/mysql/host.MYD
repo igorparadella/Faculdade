@@ -1,0 +1,9 @@
+240510 19:52:24 [Note] Event Scheduler: Loaded 0 events
+240510 19:52:24 [Note] E:\USBWebserver v8.5\8.5/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.5.20'  socket: ''  port: 3307  MySQL Community Server (GPL)
+240930 15:08:58 [Note] Event Scheduler: Loaded 0 events
+240930 15:08:58 [Note] D:\USBWebserver v8.5\8.5/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.5.20'  socket: ''  port: 3306  MySQL Community Server (GPL)
+241001 13:31:58 [Note] Event Scheduler: Loaded 0 events
+241001 13:31:58 [Note] D:\USBWebserver v8.5\8.5/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.5.20'  socket: ''  port: 8080  MySQL Community Server (GPL)
