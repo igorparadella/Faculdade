@@ -78,3 +78,35 @@ InnoDB: Restoring possible half-written data pages from the doublewrite
 InnoDB: buffer...
 250411  9:27:02  InnoDB: Waiting for the background threads to start
 250411  9:27:03 InnoDB: 1.1.8 started; log sequence number 4198378
+250411  9:43:30 [Note] Plugin 'FEDERATED' is disabled.
+250411  9:43:30 InnoDB: The InnoDB memory heap is disabled
+250411  9:43:30 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+250411  9:43:30 InnoDB: Compressed tables use zlib 1.2.3
+250411  9:43:30 InnoDB: Initializing buffer pool, size = 128.0M
+250411  9:43:30 InnoDB: Completed initialization of buffer pool
+250411  9:43:30 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+250411  9:43:30  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+250411  9:43:30  InnoDB: Waiting for the background threads to start
+250411  9:43:31 InnoDB: 1.1.8 started; log sequence number 4198378
+250411 10:05:27 [Note] Plugin 'FEDERATED' is disabled.
+250411 10:05:27 InnoDB: The InnoDB memory heap is disabled
+250411 10:05:27 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+250411 10:05:27 InnoDB: Compressed tables use zlib 1.2.3
+250411 10:05:27 InnoDB: Initializing buffer pool, size = 128.0M
+250411 10:05:27 InnoDB: Completed initialization of buffer pool
+250411 10:05:27 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+250411 10:05:27  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+250411 10:05:28  InnoDB: Waiting for the background threads to start
+250411 10:05:29 InnoDB: 1.1.8 started; log sequence number 4198720
