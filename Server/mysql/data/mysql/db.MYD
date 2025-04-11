@@ -72,3 +72,6 @@ information that should help you find out what is causing the crash.
 241003 12:05:32 [Note] Event Scheduler: Loaded 0 events
 241003 12:05:32 [Note] D:\USBWebserver v8.5\8.5/mysql/bin/mysqld_usbwv8.exe: ready for connections.
 Version: '5.5.20'  socket: ''  port: 8080  MySQL Community Server (GPL)
+250411  8:20:05 [Note] Event Scheduler: Loaded 0 events
+250411  8:20:05 [Note] C:\Users\IGORGOMES\Desktop\Faculdade\Server/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.5.20'  socket: ''  port: 8080  MySQL Community Server (GPL)
