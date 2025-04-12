@@ -23,52 +23,15 @@ while ($produto = $resultProdutos->fetch_assoc()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .carousel-inner {
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .carousel-item img {
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h5 {
-            font-size: 1.25rem;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        p {
-            font-size: 0.9rem;
-            color: #555;
-        }
-        .btn-primary {
-            background-color: #f39c12;
-            border-color: #e67e22;
-        }
-        .btn-primary:hover {
-            background-color: #e67e22;
-            border-color: #f39c12;
-        }
-        .category-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .carousel-control-prev span, .carousel-control-next span {
-            font-size: 1.5rem;
-            color: white;
-        }
-    </style>
 </head>
 <body>
 
-<div class="container mt-5">
+<div class="container mt-4">
     <h1 class="text-center mb-4">Bem-vindo à Nossa Pastelaria</h1>
 
     <?php while($categoria = $resultCategorias->fetch_assoc()): ?>
         <div class="mb-4">
-            <h3 class="category-title"><?php echo $categoria['nome']; ?></h3>
+            <h3><?php echo $categoria['nome']; ?></h3>
             <div id="carousel-<?php echo $categoria['ID_categoria']; ?>" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <?php 
@@ -78,18 +41,14 @@ while ($produto = $resultProdutos->fetch_assoc()) {
                     $first = true;
                     foreach ($chunks as $chunk): ?>
                         <div class="carousel-item <?php echo $first ? 'active' : ''; ?>">
-                            <div class="row justify-content-center">
+                            <div class="row">
                                 <?php foreach ($chunk as $produto): ?>
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card shadow-sm">
-                                            <img src="images/<?php echo $produto['imagem']; ?>" class="card-img-top" alt="<?php echo $produto['nome']; ?>">
-                                            <div class="card-body text-center">
-                                                <h5><?php echo $produto['nome']; ?></h5>
-                                                <p><?php echo $produto['descricao']; ?></p>
-                                                <p><strong>R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></strong></p>
-                                                <a href="pedido.php?id=<?php echo $produto['ID_produto']; ?>" class="btn btn-primary">Adicionar ao Pedido</a>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <img src="images/<?php echo $produto['imagem']; ?>" class="d-block w-100" alt="<?php echo $produto['nome']; ?>">
+                                        <h5><?php echo $produto['nome']; ?></h5>
+                                        <p><?php echo $produto['descricao']; ?></p>
+                                        <p><strong>R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></strong></p>
+                                        <p><a href="pedido.php?id=<?php echo $produto['ID_produto']; ?>" class="btn btn-primary">Adicionar ao Pedido</a></p>
                                     </div>
                                 <?php endforeach; ?>
                             </div>
@@ -102,10 +61,16 @@ while ($produto = $resultProdutos->fetch_assoc()) {
 
                 <!-- Setas de Navegação -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-<?php echo $categoria['ID_categoria']; ?>" data-bs-slide="prev">
-                    <span class="btn btn-primary"><</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <strong>&lt;</strong> <!-- Seta Esquerda -->
+                    </span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel-<?php echo $categoria['ID_categoria']; ?>" data-bs-slide="next">
-                    <span class="btn btn-primary">></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <strong>&gt;</strong> <!-- Seta Direita -->
+                    </span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>

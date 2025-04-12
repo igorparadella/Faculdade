@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Verificando se as credenciais estão corretas
     if ($usuario === $usuario_correto && $senha === $senha_correta) {
         session_start();
-        $_SESSION['logado'] = true;
+        $_SESSION['admin'] = true;
         header('Location: admin.php'); // Redireciona para a página admin
         exit();
     } else {
