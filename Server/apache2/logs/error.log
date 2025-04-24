@@ -1,32 +1,26 @@
-[Mon Apr 14 08:38:40 2025] [notice] Apache/2.2.21 (Win32) PHP/5.3.9 configured -- resuming normal operations
-[Mon Apr 14 08:38:40 2025] [notice] Server built: Sep 10 2011 11:34:11
-[Mon Apr 14 08:38:40 2025] [notice] Parent: Created child process 8676
-[Mon Apr 14 08:38:40 2025] [notice] Child 8676: Child process is running
-[Mon Apr 14 08:38:40 2025] [notice] Child 8676: Acquired the start mutex.
-[Mon Apr 14 08:38:40 2025] [notice] Child 8676: Starting 64 worker threads.
-[Mon Apr 14 08:38:40 2025] [notice] Child 8676: Starting thread to listen on port 3000.
-[Mon Apr 14 08:38:40 2025] [notice] Child 8676: Starting thread to listen on port 3000.
-[Mon Apr 14 08:38:46 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/favicon.ico, referer: http://localhost:3000/
-[Mon Apr 14 08:38:49 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:38:49 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:38:49 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:38:49 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:38:49 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:38:49 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:38:49 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:38:49 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:39:01 2025] [error] [client ::1] script 'C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/admin.php' not found or unable to stat
-[Mon Apr 14 08:39:46 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/admin/imagens/carne.jpg, referer: http://localhost:3000/Terca/pastelaria/admin/admin_produto.php
-[Mon Apr 14 08:39:46 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/admin/imagens/queijo.jpg, referer: http://localhost:3000/Terca/pastelaria/admin/admin_produto.php
-[Mon Apr 14 08:39:46 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/admin/imagens/brigadeiro.jpg, referer: http://localhost:3000/Terca/pastelaria/admin/admin_produto.php
-[Mon Apr 14 08:39:46 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/admin/imagens/coca.jpg, referer: http://localhost:3000/Terca/pastelaria/admin/admin_produto.php
-[Mon Apr 14 08:39:46 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/admin/imagens/harley-davidson-3840x2160-21594.jpg, referer: http://localhost:3000/Terca/pastelaria/admin/admin_produto.php
-[Mon Apr 14 08:39:46 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/admin/imagens/guts-artwork-3840x2160-21418.jpg, referer: http://localhost:3000/Terca/pastelaria/admin/admin_produto.php
-[Mon Apr 14 08:40:36 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:40:36 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:40:36 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:40:36 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:40:36 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:40:36 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:40:36 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
-[Mon Apr 14 08:40:36 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/images, referer: http://localhost:3000/Terca/pastelaria/
+[Thu Apr 24 08:48:10 2025] [notice] Apache/2.2.21 (Win32) PHP/5.3.9 configured -- resuming normal operations
+[Thu Apr 24 08:48:10 2025] [notice] Server built: Sep 10 2011 11:34:11
+[Thu Apr 24 08:48:10 2025] [notice] Parent: Created child process 16704
+[Thu Apr 24 08:48:10 2025] [notice] Child 16704: Child process is running
+[Thu Apr 24 08:48:10 2025] [notice] Child 16704: Acquired the start mutex.
+[Thu Apr 24 08:48:10 2025] [notice] Child 16704: Starting 64 worker threads.
+[Thu Apr 24 08:48:10 2025] [notice] Child 16704: Starting thread to listen on port 3000.
+[Thu Apr 24 08:48:10 2025] [notice] Child 16704: Starting thread to listen on port 3000.
+[Thu Apr 24 09:10:57 2025] [error] [client ::1] script 'C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/Terca/pastelaria/admin.php' not found or unable to stat
+[Thu Apr 24 09:10:57 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/favicon.ico, referer: http://localhost:3000/Terca/pastelaria/admin.php
+[Thu Apr 24 09:11:06 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/lisvros
+[Thu Apr 24 09:11:12 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:12:59 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:12:59 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:13:00 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:23:48 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:25:39 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/favicon.ico, referer: http://localhost:3000/livros
+[Thu Apr 24 09:25:48 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:26:38 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:26:39 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:26:39 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:26:39 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:26:39 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:26:40 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:26:40 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros
+[Thu Apr 24 09:26:40 2025] [error] [client ::1] File does not exist: C:/Users/IGORGOMES/Desktop/Faculdade/Server/root/livros

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: 12/04/2025 às 20h24min
+-- Tempo de Geração: 24/04/2025 às 13h49min
 -- Versão do Servidor: 5.5.20
 -- Versão do PHP: 5.3.9
 
@@ -18,6 +18,9 @@ SET time_zone = "+00:00";
 
 --
 -- Banco de Dados: `pastelaria`
+CREATE DATABASE IF NOT EXISTS pastelaria;
+USE pastelaria;
+
 --
 
 -- --------------------------------------------------------
@@ -209,7 +212,7 @@ CREATE TABLE IF NOT EXISTS `produto` (
   `imagem` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID_produto`),
   KEY `categoria` (`categoria`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Extraindo dados da tabela `produto`
@@ -219,10 +222,7 @@ INSERT INTO `produto` (`ID_produto`, `nome`, `descricao`, `preco`, `categoria`, 
 (1, 'Pastel de Carne', 'Pastel recheado com carne moída e temperos', 8.50, 1, 50, 'carne.jpg'),
 (2, 'Pastel de Queijo', 'Queijo derretido no recheio', 7.00, 1, 40, 'queijo.jpg'),
 (3, 'Coca-Cola 350ml', 'Refrigerante gelado', 5.00, 2, 30, 'coca.jpg'),
-(4, 'Brigadeiro', 'Doce brasileiro tradicional', 3.00, 3, 100, 'brigadeiro.jpg'),
-(13, 'adf', 'asdf', 23.00, 2, 34, 'guts-artwork-3840x2160-21418.jpg'),
-(14, 'tsete', 'asdf', 12.00, 3, 1, 'harley-davidson-3840x2160-21594.jpg'),
-(15, 'asdf', 'dsf', 23.00, 1, 2, 'sung-jinwoo-artwork-3840x2160-14671.jpg');
+(4, 'Brigadeiro', 'Doce brasileiro tradicional', 3.00, 3, 100, 'brigadeiro.jpg');
 
 --
 -- Restrições para as tabelas dumpadas
