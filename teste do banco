@@ -1,0 +1,105 @@
+-- Consulta 1: Listar todos os clientes e seus dados cadastrais
+SELECT * FROM cliente;
+
+-- Consulta 2: Mostrar produtos disponíveis com suas categorias
+SELECT 
+    p.nome AS Produto,
+    c.nome AS Categoria,
+    p.preco AS Preço,
+    p.estoque AS Estoque
+FROM produto p
+INNER JOIN categoria c ON p.categoria = c.ID_categoria;
+
+-- Consulta 3: Detalhar pedidos com itens, clientes e valores
+SELECT 
+    ped.ID_pedido AS Pedido,
+    cli.nome AS Cliente,
+    prd.nome AS Produto,
+    ip.quantidade AS Quantidade,
+    ip.preco_unitario AS "Preço Unitário",
+    (ip.quantidade * ip.preco_unitario) AS Subtotal,
+    ped.valor_total AS "Total do Pedido",
+    ped.status AS Status
+FROM pedido ped
+INNER JOIN cliente cli ON ped.ID_cliente = cli.ID_cliente
+INNER JOIN item_pedido ip ON ped.ID_pedido = ip.ID_pedido
+INNER JOIN produto prd ON ip.ID_produto = prd.ID_produto;
+
+-- Consulta 4: Total de vendas por categoria
+SELECT 
+    c.nome AS Categoria,
+    SUM(ip.quantidade * ip.preco_unitario) AS "Total Vendido"
+FROM item_pedido ip
+INNER JOIN produto p ON ip.ID_produto = p.ID_produto
+INNER JOIN categoria c ON p.categoria = c.ID_categoria
+GROUP BY c.nome;
+
+-- Consulta 5: Funcionários envolvidos nos pedidos e suas funções
+SELECT 
+    fp.ID_pedido AS Pedido,
+    f.nome AS Funcionário,
+    f.cargo AS Cargo,
+    fp.funcao_no_pedido AS "Função no Pedido"
+FROM funcionario_pedido fp
+INNER JOIN funcionario f ON fp.ID_funcionario = f.ID_funcionario;
+
+-- Consulta 6: Atualizar estoque após vendas (exemplo prático)
+UPDATE produto p
+INNER JOIN (
+    SELECT ID_produto, SUM(quantidade) AS total_vendido
+    FROM item_pedido
+    GROUP BY ID_produto
+) ip ON p.ID_produto = ip.ID_produto
+SET p.estoque = p.estoque - ip.total_vendido;
+
+-- Mostrar estoque atualizado após a operação
+SELECT nome, estoque FROM produto;
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------
+
+
+-- 1. Inserir novo cliente
+INSERT INTO cliente (nome, email, telefone, endereco) 
+VALUES ('Carla Santos', 'carla@email.com', '11933332222', 'Rua das Folhas, 789');
+
+-- 2. Criar um novo pedido para o cliente
+INSERT INTO pedido (ID_cliente, status, valor_total) 
+VALUES (11, 'em preparo', 0.00); -- Valor total será calculado posteriormente
+
+-- 3. Adicionar itens ao pedido
+INSERT INTO item_pedido (ID_pedido, ID_produto, quantidade, preco_unitario) 
+VALUES 
+(3, 1, 3, (SELECT preco FROM produto WHERE ID_produto = 1)), -- 3 Pastéis de Carne
+(3, 3, 2, (SELECT preco FROM produto WHERE ID_produto = 3));  -- 2 Coca-Colas
+
+-- 4. Calcular valor total do pedido
+UPDATE pedido 
+SET valor_total = (
+    SELECT SUM(quantidade * preco_unitario) 
+    FROM item_pedido 
+    WHERE ID_pedido = 3
+)
+WHERE ID_pedido = 3;
+
+-- 5. Registrar pagamento via cartão de débito
+INSERT INTO pagamento (ID_pedido, valor_pago, metodo_pagamento) 
+VALUES (3, (SELECT valor_total FROM pedido WHERE ID_pedido = 3), 'Cartão de Débito');
+
+-- 6. Atribuir funcionários ao pedido
+INSERT INTO funcionario_pedido (ID_funcionario, ID_pedido, funcao_no_pedido) 
+VALUES 
+(1, 3, 'Atendimento'), -- Carlos (Atendente)
+(2, 3, 'Cozinha');      -- Ana (Cozinheira)
+
+-- Verificar resultados
+SELECT * FROM pedido WHERE ID_pedido = 3;
+SELECT * FROM item_pedido WHERE ID_pedido = 3;
+SELECT * FROM pagamento WHERE ID_pedido = 3;
