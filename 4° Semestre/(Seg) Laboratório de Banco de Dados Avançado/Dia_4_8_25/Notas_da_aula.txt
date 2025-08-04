@@ -1,0 +1,77 @@
+### **Oracle: Dicas de Consulta**
+
+O Oracle é *case sensitive*, ou seja, ele diferencia letras maiúsculas de minúsculas. Isso pode ser um problema se você não se atentar ao formato exato dos dados.
+
+#### **1. Usando `LOWER` para comparar sem se preocupar com maiúsculas/minúsculas**
+
+Para evitar esse tipo de problema, você pode usar a função `LOWER()` para transformar todas as letras em minúsculas antes da comparação:
+
+```sql
+SELECT * FROM diretor WHERE LOWER(nome) = 'james gunn';
+```
+
+Esse comando vai garantir que ele não se importe com a capitalização dos caracteres.
+
+#### **2. Usando `LIKE` para encontrar correspondências parciais**
+
+Se você quiser encontrar nomes parecidos (não exatamente iguais), pode usar o operador `LIKE` junto com os curingas `%` (que representa qualquer sequência de caracteres):
+
+```sql
+SELECT * FROM diretor WHERE nome LIKE '%James%';
+```
+
+Esse comando vai retornar todos os diretores cujo nome contenha "James" em qualquer parte.
+
+#### **3. Excluindo um valor específico com `!=` ou `<>`**
+
+Se você quiser selecionar todos os diretores, exceto um com um código específico, pode usar os operadores `!=` ou `<>` (ambos significam "diferente de"):
+
+* Usando `!=`:
+
+```sql
+SELECT * FROM diretor WHERE cod_diretor != 2;
+```
+
+* Usando `<>` (operador padrão SQL):
+
+```sql
+SELECT * FROM diretor WHERE cod_diretor <> 2;
+```
+
+Ambos os comandos vão trazer todos os diretores, exceto o diretor com `cod_diretor = 2`.
+
+#### **4. Usando `OR` para múltiplos valores**
+
+Se você quiser selecionar diretores com valores específicos para `cod_diretor`, pode usar o operador `OR`, como:
+
+```sql
+SELECT * FROM diretor WHERE cod_diretor = 2 OR cod_diretor = 3 OR cod_diretor = 4;
+```
+
+Esse comando funciona, mas é possível simplificar com o operador `IN`.
+
+#### **5. Usando `IN` para simplificar a consulta**
+
+O operador `IN` é mais eficiente quando você precisa comparar um campo com vários valores. Ele torna o código mais limpo e evita repetição desnecessária do `OR`:
+
+```sql
+SELECT * FROM diretor WHERE cod_diretor IN (2, 3, 4);
+```
+
+Essa consulta é equivalente à anterior, mas mais compacta e fácil de entender.
+
+#### **6. Usando `BETWEEN` para um intervalo de valores**
+
+Se você quiser selecionar diretores dentro de um intervalo contínuo, pode usar o operador `BETWEEN`:
+
+```sql
+SELECT * FROM diretor WHERE cod_diretor BETWEEN 2 AND 5;
+```
+
+Esse comando retorna todos os diretores com `cod_diretor` de 2 a 5 (incluindo 2 e 5).
+
+---
+
+
+git commit -m "Aula 4_8_25"
+```
