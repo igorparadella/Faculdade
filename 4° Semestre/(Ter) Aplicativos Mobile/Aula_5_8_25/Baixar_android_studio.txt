@@ -1,0 +1,24 @@
+Instalar o Android Studio para a plataforma
+
+Configure o Android Studio para a plataforma com apenas alguns cliques. Primeiro, verifique os requisitos do sistema. Depois, faça o download da versão mais recente do Android Studio.
+Linux
+Observação: não há suporte para máquinas Linux com CPUs baseadas em ARM.
+
+Requisitos do sistema para Linux:
+Requisito 	Mínimo 	Recomendado
+SO 	Qualquer distribuição de Linux de 64 bits com suporte para Gnome, KDE ou Unity DE e com a Biblioteca C do GNU (glibc) 2.31 ou mais recente 	Versão mais recente do Linux de 64 bits
+RAM 	8 GB de RAM 	16 GB de RAM ou mais
+CPU 	Arquitetura de CPU x86_64, Intel Core de segunda geração ou mais recente ou processador AMD com suporte ao AMD Virtualization (AMD-V) e SSSE3 	Processador Intel Core mais recente
+Espaço em disco 	8 GB (ambiente de desenvolvimento integrado, Android Emulator e SDK do Android) 	Unidade de estado sólido (SSD) com 16 GB ou mais
+Resolução da tela 	1280 x 800 	1920 x 1080
+
+Para instalar o Android Studio para plataforma no Linux, siga estas etapas:
+
+    Descompacte o arquivo .deb transferido por download em um local adequado para seus aplicativos, como /usr/local/ para seu perfil de usuário ou /opt/ para usuários compartilhados.
+
+    Por exemplo, sudo dpkg -i /path/to/asfp-current-linux.deb.
+    Para iniciar o Android Studio para plataforma, abra um terminal, navegue até o diretório android-studio-for-platform/bin/ e execute studio.sh.
+
+    Por exemplo, /opt/android-studio-for-platform/bin/studio.sh.
+    Selecione se você quer importar as configurações anteriores do Android Studio para Plataforma e clique em OK.
+    Conclua o Assistente de configuração do Android Studio para a plataforma.
