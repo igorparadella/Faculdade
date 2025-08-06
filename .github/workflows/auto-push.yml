@@ -2,11 +2,13 @@ name: Auto Push
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Isso vai rodar a cada 5 minutos
-    
+    - cron: '${{ secrets.CRON_SCHEDULE }}'  # Agora você pode definir a frequência através de um segredo
+
+  workflow_dispatch:  # Permite rodar manualmente a qualquer momento
+
 jobs:
   push_changes:
-    runs-on: ubuntu-latest  # Você pode alterar para windows-latest ou macos-latest, se preferir.
+    runs-on: ${{ secrets.RUNNER_OS }}  # Você pode definir qual sistema usar via um segredo
 
     steps:
       - name: Check out the repository
@@ -14,11 +16,11 @@ jobs:
 
       - name: Set up Git configuration
         run: |
-          git config user.name "Igor Gomes"
-          git config user.email "igor.gomes.paradella.com"
+          git config user.name "${{ secrets.GIT_USER_NAME }}"
+          git config user.email "${{ secrets.GIT_USER_EMAIL }}"
 
       - name: Commit and push changes
         run: |
           git add .
-          git commit -m "Atualização automática"
-          git push origin main  # Certifique-se de usar a sua branch correta
+          git commit -m "${{ secrets.COMMIT_MESSAGE }}"  # Mensagem do commit configurável
+          git push origin ${{ secrets.BRANCH_NAME }}  # Branch configurável
