@@ -1,0 +1,65 @@
+---
+
+### 📌 **DNS (Domain Name System)**
+
+**O que é:**
+É como a "agenda de contatos" da internet. Ele traduz nomes de sites (como `google.com`) para endereços IP (como `142.250.72.14`) que os computadores usam para se comunicar.
+
+**Exemplo prático:**
+Quando você digita `youtube.com`, o DNS encontra o IP correspondente e te leva até o site.
+
+**Importância:**
+Sem o DNS, teríamos que memorizar vários endereços IP, o que seria muito difícil.
+
+---
+
+### 📌 **DevOps**
+
+**O que é:**
+DevOps é a junção de **Desenvolvimento (Dev)** e **Operações (Ops)**. É uma cultura e conjunto de práticas para integrar melhor os desenvolvedores e o time de infraestrutura/operacional.
+
+**Objetivo:**
+Automatizar processos, melhorar a entrega de software, reduzir erros e permitir atualizações mais rápidas.
+
+**Ferramentas comuns:**
+
+* Git (versionamento)
+* Jenkins (CI/CD)
+* Docker (containers)
+* Kubernetes (orquestração de containers)
+
+---
+
+### 📌 **IP (Internet Protocol)**
+
+**O que é:**
+O IP é o endereço de um dispositivo na rede, como se fosse o "endereço da sua casa", mas na internet.
+
+**Tipos de IP:**
+
+* **IPv4:** Ex: `192.168.0.1`
+* **IPv6:** Ex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334` (mais longo, usado para mais dispositivos)
+
+**IP público vs. privado:**
+
+* **IP público:** usado para acessar a internet.
+* **IP privado:** usado dentro de redes locais (como sua casa ou escola).
+
+---
+
+### 📌 **Servidor Web vs. Servidor Local**
+
+| Tipo de servidor   | Definição                                                               | Exemplo                     |
+| ------------------ | ----------------------------------------------------------------------- | --------------------------- |
+| **Servidor Web**   | Está na internet e responde às requisições de qualquer lugar do mundo.  | Site hospedado na HostGator |
+| **Servidor Local** | Está no seu computador ou rede local. Só você (ou sua rede) tem acesso. | XAMPP, WAMP, ou localhost   |
+
+**Diferença principal:**
+
+* O **servidor local** é para testes ou desenvolvimento.
+* O **servidor web** é o que torna o site acessível ao público.
+
+---
+
+ 
+
