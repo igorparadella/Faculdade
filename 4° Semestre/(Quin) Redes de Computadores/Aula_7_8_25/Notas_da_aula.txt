@@ -1,0 +1,42 @@
+---
+
+## 📚 **Notas de Aula – Redes de Computadores**
+
+### 🔹 **LAN (Rede Local - LAN Topologia)**
+
+* Todos os dispositivos estão **conectados entre si**.
+* Possibilidade de **compartilhamento de recursos** (não apenas acesso à internet).
+* **Autenticação de usuários** para controle de acesso.
+* **Administração centralizada** (gerenciamento da rede a partir de um ponto central).
+
+---
+
+### 🔹 **História e Evolução das Redes**
+
+* **ARPANET (1969)**: Primeira rede de computadores, precursora da internet.
+* **ALOHA**: Sistema de comunicação sem fio desenvolvido no Havaí (inspirou o Ethernet).
+* **TELENET**: Primeira rede pública baseada em ARPANET.
+* **ETHERNET**: Tecnologia de rede local desenvolvida para permitir comunicação entre dispositivos.
+* **NSFNET**: Rede da National Science Foundation que substituiu a ARPANET e impulsionou a internet acadêmica.
+
+---
+
+### 🔹 **Protocolos e Modelos**
+
+* **TCP/IP**: Conjunto de protocolos que serve de base para a internet atual.
+* **Modelo OSI (Open Systems Interconnection)**:
+
+  * Modelo de 7 camadas para padronizar a comunicação em redes.
+
+---
+
+### 🔹 **Serviços e Tecnologias da Internet**
+
+* **DNS (Domain Name System)**: Sistema que traduz nomes de domínio em endereços IP.
+* **WWW (World Wide Web)**: Sistema de documentos interligados acessíveis via navegador.
+* **HTML (HyperText Markup Language)**: Linguagem de marcação usada para criar páginas web.
+* **HTTP/HTTPS**: Protocolos de transferência de hipertexto (seguro e não seguro).
+* **DSL (Digital Subscriber Line)**: Tecnologia de transmissão de dados pela linha telefônica.
+
+---
+
