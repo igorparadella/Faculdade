@@ -1,0 +1,16 @@
+Laboratório 204
+
+C:\Users\IGORGOMES>ipconfig
+
+Configuração de IP do Windows
+
+
+Adaptador Ethernet Ethernet 2:
+
+   Sufixo DNS específico de conexão. . . . . . :
+   Endereço IPv6 de link local . . . . . . . . : fe80::7bc6:caef:f70b:112c%14
+   Endereço IPv4. . . . . . . .  . . . . . . . : 10.117.32.170
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.128
+   Gateway Padrão. . . . . . . . . . . . . . . : 10.117.32.129
+
+C:\Users\IGORGOMES>
